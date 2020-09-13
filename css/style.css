@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+/* header */
+header {
+  text-transform: uppercase;
+  background-color: #4e2a84;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+header .logo {
+  font-size: 21px;
+}
+.logo h1 a {
+  color: white;
+  text-decoration: none;
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 17px;
+}
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.nav ul li:first-child a {
+  color: #ed32df;
+}
+
+/* CAROUSEL */
+#carousel {
+  height: 600px;
+  background-image: url(../images/b3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.carousel__content {
+  text-align: center;
+}
+.carousel__content h1 {
+  font-size: 4rem;
+  padding-bottom: 5px;
+}
+.carousel__content p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 9px;
+}
+.carousel__content button {
+  padding: 11px;
+  background-color: #ff0e83;
+  border-style: none;
+  border-radius: 7px;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.carousel__content button:hover {
+  background-color: white;
+  border: 1px solid #ff0e83;
+}
+.carousel__content button a {
+  font-size: 1.2rem;
+  color: white;
+  padding: 0 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.carousel__content button a:hover {
+  color: black;
+}
+
+/* INTRO */
+#intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.intro__item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.intro__tradition {
+  background-color: #4e2a84;
+  color: white;
+}
+.intro__tradition h3 {
+  font-size: 23px;
+  padding-bottom: 8px;
+}
+.intro__tradition p {
+  font-size: 14px;
+}
+.intro__img1 {
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / span 2;
+}
+.intro__creativity {
+  background-color: #ff0e83;
+  color: white;
+}
+.intro__creativity h3 {
+  font-size: 23px;
+  padding-bottom: 8px;
+}
+.intro__creativity p {
+  font-size: 14px;
+}
+.intro__webake {
+  background-color: #ed8fe2;
+  color: white;
+  grid-column: 1 / span 2;
+}
+.intro__webake h3 {
+  font-size: 23px;
+  padding-bottom: 8px;
+}
+.intro__webake p {
+  font-size: 14px;
+}
+.intro__img2 {
+  width: 100%;
+  height: 100%;
+}
+.intro__quality {
+  background-color: #7f41db;
+  color: white;
+}
+.intro__quality h3 {
+  font-size: 23px;
+  padding-bottom: 8px;
+}
+.intro__quality p {
+  font-size: 14px;
+}
+.intro__img3 {
+  width: 100%;
+  height: 100%;
+}
+.intro__img4 {
+  grid-column: 3 / span 2;
+}
+.intro__img4 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*COUNTER*/
+#counter {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+#counter p {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 9px;
+}
+.counter {
+  color: #ab7cf1;
+}
+#video {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* SERVICE */
+#service {
+  width: 100%;
+  height: 460px;
+  background-image: url(../images/s1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 50px 0;
+}
+#service h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.service__content {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.service__item {
+  text-align: center;
+}
+.service__item i {
+  font-size: 60px;
+  margin-bottom: 12px;
+  border: 1px solid #a16af3;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: #a16af3;
+  transition: 0.5s;
+}
+.service__item i:hover {
+  color: #ff0e83;
+}
+.service__item h5 {
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+.service__item p {
+  font-size: 17px;
+  margin-bottom: 19px;
+}
+.service__content button {
+  padding: 8px 34px;
+  background-color: #ff0e83;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.service__content button a {
+  text-decoration: none;
+  color: white;
+}
+/*Gallery*/
+#gallery {
+  margin: 0 20px;
+}
+#gallery h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.gallery__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.gallery__content .gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery__content .item1 {
+  grid-column: 1 / span 2;
+}
+.gallery__content .item6 {
+  grid-column: 3 / span 2;
+}
+.gallery__item {
+  position: relative;
+}
+.gallery__text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  padding: 20px;
+  color: white;
+  background-color: #00ffff1a;
+}
+.gallery__text h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 33px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.gallery__text h3 span {
+  font-weight: bold;
+}
+.gallery__text h3::after {
+  display: block;
+  content: "";
+  background-color: white;
+  height: 3px;
+  margin-top: 19px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.gallery__text p {
+  bottom: 50px;
+  position: absolute;
+  right: 20px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.gallery__text:hover p {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.gallery__text:hover h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery__text:hover h3::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+.gallery__text:hover {
+  cursor: pointer;
+}
+
+/* TEAM */
+#team {
+  margin-top: 20px;
+  background-color: #4e2a84;
+}
+#team h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.team__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  margin: 0 auto;
+  grid-gap: 50px;
+}
+.team__member {
+  position: relative;
+}
+.team__member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.team__member .member__name {
+  position: absolute;
+  bottom: 0;
+  background-color: #ff0e83;
+  width: 100%;
+  color: white;
+  height: 20%;
+}
+.team__member .member__name h3,
+p {
+  padding: 5px 10px;
+}
+/* OVERlay */
+.team__member .layout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #17161469;
+opacity: 0;
+}
